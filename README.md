@@ -1,1 +1,1 @@
-# Ethio-News in Android Application Which Provide News in Amharic Langugde
+# Ethio-News is Android Application Which Provide News in Amharic Langugde
