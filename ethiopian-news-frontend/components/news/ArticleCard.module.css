@@ -1,0 +1,89 @@
+/* components/news/ArticleCard.module.css */
+.card {
+  background-color: var(--white-color);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform */
+  max-width: 350px;
+  font-family: var(--font-body);
+  display: flex; /* Added to make card a flex container for its content */
+  flex-direction: column; /* Stack image and content vertically */
+  height: 100%; /* Make card take full height of its container if in a grid */
+}
+
+/* New style for the Link wrapping the card */
+.cardLink {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+  display: block; /* Ensure the link takes up the card's space */
+  height: 100%; /* Ensure link wrapper also takes full height */
+}
+
+.cardLink:hover .card { /* Apply hover effects to card when link is hovered */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+
+.imageContainer {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background-color: var(--light-gray-bg);
+  flex-shrink: 0; /* Prevent image container from shrinking */
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding: 15px;
+  flex-grow: 1; /* Allow content to take remaining space */
+  display: flex;
+  flex-direction: column; /* Stack content items vertically */
+}
+
+.category {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  align-self: flex-start; /* Align category to the start of the content area */
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.excerpt {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  margin-bottom: 15px; /* Space before a potential read more or end of card */
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: calc(14px * 1.6 * 3);
+  flex-grow: 1; /* Allow excerpt to take available space before read more */
+}
+
+/* Removed .readMore as card is now a link. If a specific "Read More" text is still needed, it can be added back. */
+/* If ArticleCard is used in places where it's not a link, the old .readMore might be useful. */
+/* For now, assuming if href is present, the whole card is the link. */

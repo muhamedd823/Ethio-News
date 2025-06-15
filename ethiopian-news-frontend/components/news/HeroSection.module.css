@@ -1,0 +1,167 @@
+/* components/news/HeroSection.module.css */
+.heroContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Main story takes 2/3, secondary takes 1/3 */
+  gap: 20px;
+  padding: 20px 0; /* Padding above and below the section */
+  background-color: var(--light-gray-bg); /* Differentiate hero section */
+  border-radius: 8px;
+  margin-bottom: 30px; /* Space below hero section */
+}
+.heroContainerEmpty {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--light-gray-bg);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: var(--secondary-text-color);
+}
+
+.mainStory, .secondaryStories {
+  position: relative; /* For text overlay positioning */
+}
+
+.mainArticle, .secondaryArticle {
+  display: block;
+  position: relative; /* For image fill and text overlay */
+  overflow: hidden;
+  border-radius: 8px; /* Rounded corners for articles */
+  text-decoration: none;
+  color: var(--white-color); /* Default text color for overlay */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainArticle:hover, .secondaryArticle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.mainArticle .imageContainer {
+  width: 100%;
+  height: 450px; /* Fixed height for main story image */
+  position: relative;
+}
+
+.secondaryArticle {
+  margin-bottom: 15px; /* Space between secondary articles */
+}
+.secondaryArticle:last-child {
+  margin-bottom: 0;
+}
+
+.secondaryArticle .imageContainer {
+  width: 100%;
+  height: 217px; /* Adjust height for secondary stories, making two fit main height with gap */
+  position: relative;
+}
+
+
+.image {
+  object-fit: cover; /* Cover the container, may crop */
+  transition: transform 0.3s ease;
+}
+
+.mainArticle:hover .image, .secondaryArticle:hover .image {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.textOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 60%, rgba(0,0,0,0) 100%);
+  border-bottom-left-radius: 8px; /* Match container rounding */
+  border-bottom-right-radius: 8px;
+}
+
+.mainArticle .textOverlay {
+  padding: 25px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem; /* Main article title */
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+  color: var(--white-color);
+}
+
+.secondaryArticle .title {
+  font-size: 1.1rem; /* Secondary article title */
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+}
+
+.excerpt {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit excerpt to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.category {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .heroContainer {
+    grid-template-columns: 1fr; /* Stack main and secondary stories */
+  }
+  .mainArticle .imageContainer {
+    height: 350px; /* Adjust height for smaller screens */
+  }
+  .secondaryStories {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two secondary stories side-by-side */
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .secondaryArticle .imageContainer {
+    height: 180px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .secondaryArticle .title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainArticle .imageContainer {
+    height: 250px;
+  }
+  .secondaryStories {
+    grid-template-columns: 1fr; /* Stack secondary stories on very small screens */
+  }
+  .secondaryArticle .imageContainer {
+    height: 150px;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .textOverlay {
+    padding: 15px;
+  }
+  .mainArticle .textOverlay {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+/* components/common/Logo.module.css */
+.logoContainer {
+  display: inline-block;
+  padding: 5px 0; /* Add some padding or adjust as needed */
+  font-family: var(--font-heading); /* Use heading font for the logo */
+  font-size: 24px; /* Example size, adjust as needed */
+  font-weight: bold;
+}
+
+.logoTextPrimary {
+  color: var(--primary-color);
+}
+
+.logoTextAccent {
+  color: var(--accent-color);
+  margin-left: 4px; /* Small space between the two parts of the name */
+}

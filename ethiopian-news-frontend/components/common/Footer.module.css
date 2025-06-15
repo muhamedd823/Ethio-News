@@ -1,0 +1,58 @@
+/* components/common/Footer.module.css */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 30px 20px; /* Increased padding */
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Increased gap */
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Increased gap */
+  margin-bottom: 10px;
+}
+
+.footerLink { /* Style for Next.js Link components */
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 15px; /* Increased gap */
+  margin-bottom: 10px;
+}
+
+.socialLink { /* Style for social media anchor tags */
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 18px; /* Slightly larger for icons/text */
+  transition: color 0.2s ease;
+}
+.socialLink:hover {
+  color: var(--accent-color);
+}
+
+
+.copyright {
+  font-size: 13px; /* Slightly larger */
+  color: rgba(255, 255, 255, 0.8); /* Lighter white for copyright */
+}

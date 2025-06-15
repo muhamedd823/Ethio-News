@@ -1,0 +1,82 @@
+/* styles/Home.module.css */
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color); /* Ensure main background is set */
+}
+
+.mainContent {
+  flex: 1;
+  padding: 0 20px 20px 20px; /* No top padding, handled by sections or header */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Styles for HeroSection and FeaturedStoriesSection are in their own modules */
+/* This file will handle layout specific to the index page's main container and general sections */
+
+.sectionTitle { /* General style for section titles, can be overridden by specific components */
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-top: 30px; /* Space above section titles */
+  margin-bottom: 20px; /* Space below section titles */
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+}
+
+
+.latestNewsSection {
+  padding: 20px 0; /* Padding for the latest news section container */
+}
+
+/* .latestNewsSection .sectionTitle is already covered by the general .sectionTitle style */
+
+.articlesGrid { /* Reused for Latest News */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px; /* Increased gap slightly */
+  justify-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 0 15px 15px 15px;
+  }
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .articlesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContent {
+    padding: 0 10px 10px 10px;
+  }
+  .sectionTitle {
+    font-size: 1.4rem;
+    text-align: center;
+    display: block;
+    border-bottom-width: 1px;
+  }
+  .articlesGrid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 15px;
+  }
+}
