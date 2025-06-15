@@ -1,0 +1,208 @@
+## Ethiopian News Website - Design Mockups
+
+**Objective:** To create a modern, elegant, and trustworthy news website that reflects Ethiopian identity through subtle cultural richness, inspired by leading international news platforms.
+
+---
+
+### 1. Homepage Mockup
+
+**Layout:**
+*   **Overall:** Clean, modern, and uncluttered with ample white space to enhance readability and visual appeal. The layout will be responsive, adapting seamlessly to desktop, tablet, and mobile devices.
+*   **Grid System:** A flexible grid system (e.g., 12-column) will be used to ensure content alignment and a structured presentation.
+
+**Sections:**
+
+*   **A. Header:**
+    *   **Top Bar:**
+        *   **Left:** Logo (placeholder for a custom design, potentially incorporating a subtle Ethiopian symbol like the Lion of Judah or an Aksumite obelisk motif in a modern, minimalist style).
+        *   **Center:** Search Bar (minimalist icon expanding on click).
+        *   **Right:** Language Switcher (e.g., "English | አማርኛ | Afaan Oromoo" - clear, accessible buttons), Date.
+    *   **Main Navigation Menu:**
+        *   Sticky on scroll for easy access.
+        *   Links: Home, Politics, Economy, Technology, Society & Culture, Opinion, Sports, World.
+        *   A "More" dropdown for less prominent categories (e.g., Health, Education, Diaspora News).
+        *   Subtle bottom border to separate from the content below.
+
+*   **B. Breaking News Ticker:**
+    *   Positioned directly below the main navigation.
+    *   Horizontally scrolling single line of text for urgent, breaking news updates.
+    *   Clearly labeled "BREAKING NEWS" with a subtle, attention-grabbing icon (e.g., a stylized lightning bolt or a minimalist flame).
+
+*   **C. Top Headlines (Hero Section):**
+    *   **Layout:** Prominent, visually driven section showcasing 1-3 top stories.
+    *   **Main Story:** Large placeholder for a compelling image or video. Headline overlaid with a semi-transparent background for readability. Brief excerpt below the headline. Ge'ez-inspired font style for the main headline (subtle curves or character emphasis, not a full script unless a highly legible modern Ge'ez font is available and appropriate).
+    *   **Secondary Stories (2):** Smaller thumbnails and headlines to the side or below the main story, creating a visual hierarchy.
+
+*   **D. Featured Stories:**
+    *   **Layout:** A curated section below Top Headlines, possibly with a slightly different background color (#F4F4F4) to differentiate it.
+    *   **Content:** 2-4 important stories that might not be "breaking" but are significant.
+    *   **Visuals:** Medium-sized image placeholders for each story, accompanied by headlines and short summaries.
+    *   **Iconography:** A "Meskel flower" icon could be subtly used next to the "Featured Stories" section title.
+
+*   **E. Categorized News:**
+    *   **Layout:** Sections dedicated to key categories (e.g., Politics, Economy, Technology, Society & Culture).
+    *   **Arrangement:** Each category section will display 3-5 recent articles.
+        *   Option 1: Card-based layout for each article (image placeholder, headline, source/date, brief excerpt).
+        *   Option 2: List-based layout with smaller thumbnails for a more compact view.
+    *   **Navigation:** Clear headings for each category. A "View More [Category]" link at the bottom of each section.
+
+*   **F. Trending Articles:**
+    *   **Layout:** Sidebar or a horizontal section.
+    *   **Content:** List of 5-7 most read or most discussed articles, perhaps with a small "trending" icon (e.g., a stylized upward arrow or a coffee bean icon labeled "Hot Brew").
+    *   **Visuals:** Primarily text-based (titles), possibly with very small thumbnails or view counts.
+
+*   **G. "From the Regions" (Optional/Future Section):**
+    *   A section dedicated to news from different regions of Ethiopia, promoting diverse perspectives. Could use an interactive map placeholder or categorized links.
+
+*   **H. Opinion/Editorials:**
+    *   Visually distinct section, perhaps with author photos alongside article snippets.
+
+*   **I. Newsletter Signup:**
+    *   **Layout:** Clean and simple block, often placed in the sidebar or before the footer.
+    *   **Elements:** Brief call to action (e.g., "Stay Informed. Get our top stories delivered."), email input field, and a submit button.
+    *   **Privacy Note:** Link to privacy policy.
+
+*   **J. Footer:**
+    *   **Layout:** Multi-column layout.
+    *   **Content:**
+        *   About Us, Contact Us, Advertise With Us, Careers.
+        *   Terms of Service, Privacy Policy, Cookie Policy.
+        *   Social Media Links (icons for Facebook, Twitter, Instagram, Telegram, YouTube).
+        *   Copyright information.
+        *   Back to Top button.
+
+**Visuals:**
+*   Placeholders will indicate where strong, high-quality photography and videography will be used. Images should be representative of Ethiopia's diversity and current events, avoiding stereotypical portrayals.
+*   Emphasis on a "hero" image for the main story.
+
+**Cultural Elements (Subtle Integration):**
+*   **Heading Font Style:** For major section titles or the main headline, explore a sans-serif font that has a touch of Ge'ez character forms – not a literal Ge'ez script, but letterforms that might have slightly more organic curves or unique terminals inspired by Ge'ez. This needs careful execution to maintain readability and modernity.
+*   **Patterns:** A very subtle background pattern, perhaps inspired by traditional Ethiopian textiles (e.g., the "Tibeb" patterns), could be used in section dividers or the page background (very light opacity). This should be almost imperceptible, adding texture rather than distraction. Example: A faint, geometric border around the "Featured Stories" section.
+*   **Color Accents:** Using the Rich Gold (#C9A13F) or a subtle Red (#A94442) for specific call-to-action elements or section dividers, drawing from cultural color significances (e.g., gold for value, red for importance).
+
+---
+
+### 2. Article Page Mockup
+
+**Layout:**
+*   **Overall:** Prioritize readability and focus on the content. Single-column layout for the main article body.
+*   **Spacing:** Generous line spacing (e.g., 1.5x - 1.7x font size), comfortable paragraph breaks, and sufficient margins.
+
+**Elements:**
+
+*   **A. Header:** Consistent with the homepage (Logo, Search, Language Switcher, Main Navigation).
+*   **B. Breadcrumbs:**
+    *   Located below the header/navigation (e.g., Home > Politics > Article Title).
+    *   Helps with navigation and context.
+
+*   **C. Article Headline:**
+    *   Large, clear, and impactful. Using the chosen heading font (e.g., Montserrat Bold).
+    *   Could incorporate the subtle Ge'ez-inspired styling if deemed appropriate and legible for longer titles.
+
+*   **D. Author and Date:**
+    *   Positioned directly below the headline.
+    *   Author's name (clickable to an author page if applicable).
+    *   Publication date and time (e.g., "Published: October 26, 2023, 10:30 AM EAT").
+    *   Optional: Estimated reading time.
+
+*   **E. Social Sharing Buttons (Top):**
+    *   Subtly placed near the headline/author information for easy sharing before reading.
+    *   Icons for major platforms (Facebook, Twitter, Telegram, WhatsApp, Email).
+
+*   **F. Featured Image/Video:**
+    *   High-quality image or video embed relevant to the article, placed prominently below the author/date or after the first couple of paragraphs.
+    *   Caption for the image/video.
+
+*   **G. Article Body:**
+    *   **Typography:** Highly readable body font (Lato or Inter) at a comfortable size (e.g., 16-18px).
+    *   **Formatting:** Clear distinction for blockquotes, pull quotes, lists, and hyperlinks.
+    *   **Image/Video Embeds:** Seamlessly integrated within the content flow, with captions.
+    *   **Ads:** Placeholder for unobtrusive in-article ads, if planned. Must not disrupt the reading experience.
+
+*   **H. Tags/Keywords:**
+    *   Usually at the end of the article body.
+    *   Clickable tags that lead to a page with other articles sharing the same tag.
+
+*   **I. Author Bio (Optional):**
+    *   A brief section about the author, possibly with a small photo, at the end of the article.
+
+*   **J. Like/Reaction Button:**
+    *   A simple "Like" (thumbs up) or reaction buttons (e.g., inspired, concerned, etc.) to gauge user engagement without full comments.
+
+*   **K. Social Sharing Buttons (Bottom):**
+    *   Reinforce sharing options at the end of the article.
+
+*   **L. Related Articles:**
+    *   **Layout:** 2-4 thumbnails and headlines of articles on similar topics.
+    *   **Placement:** Below the article body and sharing buttons.
+    *   **Algorithm:** Based on tags, category, or AI-driven recommendations.
+
+*   **M. Comment Section:**
+    *   **Opt-in:** May be initially hidden with a "Show Comments" button to improve page load and reduce clutter.
+    *   **Elements:** Field for writing comments, display of existing comments (threaded or flat), sorting options (newest, oldest, most liked).
+    *   **Moderation:** Clear indication of moderation policies.
+
+*   **N. Footer:** Consistent with the homepage.
+
+**Cultural Elements (Subtle Integration):**
+*   **Dividers:** Instead of standard horizontal rules, use a subtle divider element inspired by Ethiopian motifs. For example, a thin line that incorporates a repeating, simplified geometric pattern found in Ethiopian art or architecture (e.g., a very minimalist take on a Lalibela cross outline, or a pattern from a Gonderian castle's frieze). This should be very understated.
+*   **Drop Caps:** For the first letter of the article, consider a stylized drop cap that might subtly echo Ge'ez letterform aesthetics, if it can be done elegantly without sacrificing readability.
+
+---
+
+### 3. Style Guide Snippet
+
+**A. Color Palette:**
+
+*   **Primary:**
+    *   **Deep Green (#0B3D2E):** For primary branding elements, navigation backgrounds, possibly footer. Evokes stability, nature, and growth.
+    *   *(Alternative Primary: Rich Gold #C9A13F - if a warmer, more regal feel is desired for primary branding)*
+*   **Secondary (Neutrals):**
+    *   **White (#FFFFFF):** For backgrounds, main content areas.
+    *   **Light Gray (#F4F4F4):** For secondary backgrounds, section differentiation, card backgrounds.
+    *   **Dark Gray/Off-Black (#333333):** For body text, ensuring high contrast and readability.
+    *   **Medium Gray (#666666):** For secondary text, captions, metadata.
+*   **Accent Colors (Use Sparingly):**
+    *   **Rich Gold (#C9A13F) or Bright Yellow (#D4AF37):** For calls to action, highlights, important icons, or the breaking news ticker background. Represents value, energy, optimism. (If Deep Green is primary, gold is a good accent).
+    *   **Subtle Red (#A94442 or #C0392B):** For critical alerts, breaking news text, or specific interactive elements (e.g., "live" indicator). Use with caution to avoid alarmist feel.
+    *   **Bright Green (#2ECC71):** For success messages, positive indicators.
+
+**B. Typography:**
+
+*   **Body Font:**
+    *   **Lato:** A humanist sans-serif, very readable, friendly, and works well for long text. Offers a good range of weights.
+    *   *(Alternative: Inter - A highly legible neo-grotesque sans-serif designed for UI, excellent for on-screen reading.)*
+    *   **Size:** 16px-18px for desktop, with appropriate scaling for mobile.
+    *   **Line Height:** 1.5 - 1.7.
+
+*   **Heading Font:**
+    *   **Montserrat Bold:** Geometric, modern, and elegant. Provides a strong presence for headlines.
+    *   *(Alternative: Raleway Bold - Elegant sans-serif with a slightly more geometric and refined feel.)*
+    *   **Consideration for Ge'ez-inspired Titles:** For specific, very prominent headlines (e.g., main story on homepage), explore the possibility of commissioning or using a custom sans-serif font where some letterforms are subtly influenced by Ge'ez script aesthetics (e.g., unique curves, terminals, or ligatures). This is a high-level design goal that would require specialized typographic work to ensure it remains highly legible, modern, and not a caricature. It should *not* be a literal Ge'ez script font for English text, but rather a stylistic nuance.
+
+*   **Hierarchy:** Clear typographic hierarchy will be established using font sizes, weights (e.g., Bold, SemiBold, Regular), and color.
+    *   H1: Largest, for main page titles and article headlines.
+    *   H2: Section titles.
+    *   H3: Sub-section titles or card headlines.
+    *   And so on.
+
+**C. Iconography:**
+
+*   **Style:** Clean, minimalist, and modern vector icons. Consistent line weight and style.
+*   **Custom Icons (Suggestions for Ethiopian Symbolism):**
+    *   **Featured Story/Section:** Stylized Meskel Flower (Adey Abeba) – simple, elegant outline.
+    *   **Latest News/Trending/Hot Brew:** Coffee Bean icon – universally recognized and ties to Ethiopian heritage.
+    *   **"From the Regions" Section:** Perhaps a simplified outline of the map of Ethiopia or a traditional shield (Gasha) motif.
+    *   **Language Switcher:** Could use a very subtle pattern from Ethiopian textiles within the icon itself if feasible, or just standard globe/language icons.
+    *   **Breaking News:** A stylized "Negarit" drum (historic proclamation drum) if a culturally unique icon is desired, otherwise a standard flame/lightning bolt.
+*   **Standard Icons:** Use a well-established icon library (e.g., Feather Icons, Material Icons, or Font Awesome) for common UI elements (search, social media, navigation arrows, comments, likes) to ensure familiarity and quick comprehension, then supplement with custom icons where culturally relevant and impactful.
+
+---
+**Summary of Style Guide Choices:**
+
+The style guide aims for a balance of modernity and subtle Ethiopian cultural expression.
+*   **Colors:** A primary choice of Deep Green (#0B3D2E) offers a sense of stability and trustworthiness, complemented by neutrals (#FFFFFF, #F4F4F4, #333333) for clarity. Rich Gold (#C9A13F) and a Subtle Red (#A94442) serve as key accents, adding visual interest and cultural resonance without overwhelming the design. This palette is chosen to be elegant, professional, and avoid the overly bright or distracting colors the user feedback warned against.
+*   **Typography:** Lato (or Inter) for body text ensures high readability for news consumption. Montserrat Bold (or Raleway Bold) for headings provides a modern, strong voice. The suggestion for a Ge'ez-inspired custom font for select titles is a forward-thinking idea to strongly connect to Ethiopian identity, but requires careful execution to maintain legibility and avoid cliché. The focus is on clean, sans-serif fonts that perform well on screens.
+*   **Iconography:** A hybrid approach is recommended: standard, recognizable icons for UI functions, enriched with custom icons drawing from Ethiopian symbols like the Meskel flower or coffee bean. This makes the site unique and culturally connected while maintaining usability. Icons should be minimalist and modern.
+
+This combination of elements is designed to create a news website that is visually striking, easy to navigate, trustworthy, and feels authentically Ethiopian in a contemporary way.

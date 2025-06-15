@@ -1,0 +1,97 @@
+/* components/common/Navigation.module.css */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  font-family: var(--font-body);
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 10px 5px;
+  display: block;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+  border-bottom: 2px solid transparent; /* For active state underline */
+}
+
+.navLink:hover {
+  color: var(--accent-color);
+}
+
+/* Active state for main navigation links */
+.navLink.active {
+  color: var(--accent-color);
+  font-weight: bold;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* "More" button specific styling */
+.moreButton {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection on click */
+}
+.moreButton.activeMore { /* Style for when the "More" dropdown is open */
+  color: var(--accent-color);
+}
+
+
+.dropdownContainer {
+  /* No specific styles needed here unless for spacing */
+}
+
+.dropdownContent {
+  /* display: none; Now controlled by React state */
+  position: absolute;
+  background-color: var(--white-color);
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1100; /* Ensure it's above header (which is 1000) */
+  border-radius: 4px;
+  padding: 5px 0;
+  right: 0;
+  margin-top: 5px; /* Small gap between button and dropdown */
+  border: 1px solid var(--light-gray-bg); /* Subtle border */
+}
+
+/* .dropdownContainer:hover .dropdownContent {
+  display: block; /* REMOVE THIS - No longer hover based */
+/* } */
+
+.dropdownLink {
+  color: var(--text-color);
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdownLink:hover {
+  background-color: var(--light-gray-bg);
+  color: var(--primary-color);
+}
+
+/* Active state for dropdown links */
+.dropdownLink.activeDropdownLink {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+.dropdownLink.activeDropdownLink:hover { /* Maintain active style on hover */
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    opacity: 0.9;
+}

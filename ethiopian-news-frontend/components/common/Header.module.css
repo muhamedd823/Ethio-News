@@ -1,0 +1,195 @@
+/* components/common/Header.module.css */
+.header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoArea {
+  flex-shrink: 0;
+}
+
+.mainNav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Gap between search form and lang switcher */
+  flex-shrink: 0;
+}
+
+/* Search Form Styles */
+.searchForm {
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color); /* White background for the search input area */
+  border-radius: 4px;
+  padding: 2px 5px; /* Small padding around input and button */
+  /* box-shadow: inset 0 1px 2px rgba(0,0,0,0.1); */ /* Optional inner shadow */
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  padding: 6px 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-color); /* Text color inside input */
+  background-color: transparent; /* Make input background transparent */
+  width: 180px; /* Adjust width as needed */
+  transition: width 0.3s ease-in-out;
+}
+.searchInput::placeholder {
+  color: var(--secondary-text-color);
+  opacity: 0.8;
+}
+.searchInput:focus {
+  width: 250px; /* Expand on focus */
+}
+
+
+.searchButton {
+  background-color: transparent; /* Transparent background for button */
+  border: none;
+  color: var(--primary-color); /* Icon color - matches header bg */
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px; /* Match overall rounding */
+}
+.searchButton span {
+  font-size: 16px; /* Adjust icon size */
+}
+.searchButton:hover {
+  /* background-color: rgba(0,0,0,0.05); */ /* Subtle hover for button background */
+  opacity: 0.8;
+}
+
+
+/* Language Switcher Styles */
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.langButton {
+  background-color: transparent;
+  color: var(--white-color);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+}
+
+.langButton:hover,
+.langButton.active {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.langSeparator {
+  color: var(--white-color);
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) { /* Tablet */
+  .mainNav {
+    order: 3; /* Move nav below logo and actions */
+    width: 100%;
+    margin-top: 10px;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+  .container {
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+  .logoArea {
+    width: 50%; /* Example: allow actions to take other half */
+  }
+  .actions {
+    width: 50%;
+    justify-content: flex-end; /* Align actions to the right */
+  }
+  .searchInput {
+    width: 150px;
+  }
+  .searchInput:focus {
+    width: 180px;
+  }
+}
+
+
+@media (max-width: 768px) { /* Smaller tablets / large phones */
+  .container {
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to full width */
+  }
+  .logoArea {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center logo */
+    margin-bottom: 10px;
+  }
+  .actions {
+    width: 100%;
+    flex-direction: column; /* Stack search and lang switcher */
+    align-items: stretch; /* Stretch action items */
+    gap: 10px; /* Gap between stacked search and lang switcher */
+  }
+  .searchForm {
+    width: 100%; /* Full width search form */
+  }
+  .searchInput {
+    width: 100%; /* Input takes full width of form */
+    flex-grow: 1;
+  }
+  .searchInput:focus {
+    width: 100%; /* No expansion needed if already full width */
+  }
+  .languageSwitcher {
+    justify-content: center; /* Center language switcher buttons */
+  }
+  .mainNav {
+    order: initial; /* Reset order */
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) { /* Small phones */
+  .mainNav .navList {
+      gap: 8px;
+  }
+  .mainNav .navLink {
+      font-size: 14px;
+      padding: 8px 2px;
+  }
+  .searchInput {
+    font-size: 13px;
+  }
+  .langButton {
+      font-size: 13px;
+  }
+}

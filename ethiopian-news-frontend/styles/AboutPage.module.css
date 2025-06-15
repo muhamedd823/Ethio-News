@@ -1,0 +1,97 @@
+/* styles/AboutPage.module.css */
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.mainContent {
+  flex: 1;
+  max-width: 900px; /* Suitable width for text-heavy content */
+  margin: 30px auto; /* Top/bottom margin and centered */
+  padding: 20px 30px;
+  background-color: var(--white-color); /* White background for content area */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+  line-height: 1.7;
+  font-family: var(--font-body);
+  color: var(--text-color);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 15px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--light-gray-bg);
+}
+
+.mainContent p {
+  margin-bottom: 1em;
+  font-size: 1.05rem;
+}
+
+.valuesList {
+  list-style: disc; /* Or none, with custom icons */
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+.valuesList li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.valuesList li strong {
+  color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainContent {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .mainContent p, .valuesList li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContent {
+    margin: 15px 10px; /* Less horizontal margin on small screens */
+    padding: 15px;
+    border-radius: 4px;
+  }
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 1.3rem;
+  }
+}

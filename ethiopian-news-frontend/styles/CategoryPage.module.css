@@ -1,0 +1,77 @@
+/* styles/CategoryPage.module.css */
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.categoryTitle {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-top: 10px; /* Reduced top margin */
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent-color);
+  text-align: center; /* Center the category title */
+}
+
+.articlesGrid { /* Reusing structure from Home.module.css but defined here for clarity */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  justify-items: center; /* Center cards if they don't fill the row */
+}
+
+.noArticlesMessage {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--light-gray-bg);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainContent {
+    padding: 15px;
+  }
+  .categoryTitle {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+  .articlesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContent {
+    padding: 10px;
+  }
+  .categoryTitle {
+    font-size: 1.6rem;
+  }
+  .articlesGrid {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 15px;
+  }
+  .noArticlesMessage {
+    font-size: 1rem;
+    padding: 30px 15px;
+  }
+}

@@ -1,0 +1,52 @@
+/* components/news/FeaturedStoriesSection.module.css */
+.featuredSection {
+  padding: 20px 0; /* Padding above and below the section */
+  margin-bottom: 30px; /* Space below this section */
+  /* background-color: var(--white-color); Optional: if a different background is desired */
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.8rem; /* Consistent with other section titles */
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: left; /* Or center, depending on design */
+
+  /* Optional: Add a subtle bottom border or accent */
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block; /* So border only spans the text width */
+}
+
+.articlesContainer {
+  display: grid;
+  /* Using 4 columns for featured, but can be adjusted */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* If using ArticleCard, its own styles will apply. */
+/* You can add overrides here if featured cards need to look different. */
+/* For example, if the ArticleCard in FeaturedStoriesSection should have a different max-width or hover effect */
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .articlesContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .articlesContainer {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+  .sectionTitle {
+    font-size: 1.4rem;
+    text-align: center;
+    display: block; /* Full width border */
+    border-bottom-width: 1px;
+  }
+}

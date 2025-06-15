@@ -1,0 +1,90 @@
+/* components/news/BreakingNewsTicker.module.css */
+.tickerContainer {
+  background-color: var(--accent-color); /* Using accent color as requested */
+  /* Alternative: var(--subtle-red-accent); */
+  color: var(--white-color);
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Crucial for the scrolling effect */
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.label {
+  font-weight: bold;
+  padding-right: 15px;
+  white-space: nowrap; /* Prevent label from wrapping */
+  text-transform: uppercase;
+  color: var(--primary-color); /* Make label stand out more */
+}
+
+.newsScroll {
+  flex-grow: 1;
+  overflow: hidden; /* Hide the non-visible part of scrolling content */
+  position: relative; /* For potential pseudo-elements if needed for fading edges */
+}
+
+.newsContent {
+  display: flex;
+  white-space: nowrap; /* Keep all items in a single line */
+  animation: scrollText 30s linear infinite; /* Adjust duration based on content length */
+}
+
+.newsItem {
+  padding: 0 20px; /* Spacing between news items */
+  display: inline-block; /* Ensure items are on one line */
+}
+
+.newsItem::after {
+ content: "◈"; /* Separator, can be any character or image */
+ margin-left: 20px;
+ color: var(--primary-color);
+ opacity: 0.7;
+}
+.newsItem:last-child::after {
+    content: ""; /* No separator after the last item */
+    margin-left: 0;
+}
+
+
+/* Pure CSS scrolling animation */
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); /* Scroll by half the width (since content is duplicated) */
+  }
+}
+
+/* Pause animation on hover */
+.tickerContainer:hover .newsContent {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tickerContainer {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .label {
+    padding-right: 10px;
+  }
+  .newsItem {
+    padding: 0 15px;
+  }
+   .newsItem::after {
+    margin-left: 15px;
+   }
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 12px;
+  }
+  .tickerContainer {
+    font-size: 12px;
+  }
+}
